@@ -1,18 +1,23 @@
 #! /usr/bin/env node
 
-import { program } from 'commander'
-import { readFileSync } from 'fs'
-import create from '../lib/create.js'
+import { program } from "commander";
+import { readFileSync } from "fs";
+import create from "../lib/create.js";
+import { fileURLToPath } from "url";
+import path from "path";
 
-const pkg = JSON.parse(readFileSync('package.json', 'utf-8'))
+const __filename = fileURLToPath(import.meta.url);
+const currentFolderPath = path.dirname(__filename);
+const pkgPath = path.resolve(currentFolderPath, "../package.json");
+
+const pkg = JSON.parse(readFileSync(pkgPath, "utf-8"));
 
 program
   .version(`Stillads ${pkg.version}`)
-  .usage('<command> [option]')
-  .name('Stillads')
-  .command('create <name>')
+  .usage("<command> [option]")
+  .name("Stillads")
   .action((name) => {
-    create(name)
-  })
+    create(name);
+  });
 
-program.parse()
+program.parse();
