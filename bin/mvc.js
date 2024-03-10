@@ -16,8 +16,8 @@ program
   .version(`Stillads ${pkg.version}`)
   .usage("<command> [option]")
   .name("Stillads")
-  .action((name) => {
-    create(name);
+  .action(() => {
+    create();
   });
 
 program.parse();
