@@ -1,6 +1,9 @@
 # Stillads
 
-![alt text](/assets/icon.png)
+![alt text](/Logo.jpg)
 
 ## Guick start
 
+```
+pnpm create stillads-test-7
+```
