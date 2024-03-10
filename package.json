@@ -3,7 +3,9 @@
   "type": "module",
   "version": "1.0.1",
   "description": "",
-  "bin": "/bin/mvc.js",
+  "bin": {
+    "create-test5-test5": "bin/mvc.js"
+  },
   "main": "/bin/mvc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
