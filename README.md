@@ -1,3 +1,3 @@
 # Stillads
 
-![alt text](image.png)
+![alt text](/assets/icon.png)
