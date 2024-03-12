@@ -1,12 +1,12 @@
 {
-  "name": "js-react-oxlint-rsbuild",
+  "name": "Demo",
   "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "linter": "oxlint -c ./.eslintrc.json"
+    "lint": " oxlint -c ./.eslintrc.json && eslint ./src/**"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@rsbuild/core": "^0.4.13",
     "@rsbuild/plugin-react": "^0.4.13",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint-plugin-react": "^7.34.0",
     "oxlint": "^0.2.13"
   }

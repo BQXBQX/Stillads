@@ -1,12 +1,12 @@
 {
-  "name": "my-stillads-project",
+  "name": "Demo",
   "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "linter": "oxlint -c ./.eslintrc.json",
+    "lint": " oxlint -c ./.eslintrc.json && eslint ./src/**",
     "commit": "cz"
   },
   "dependencies": {
@@ -21,6 +21,11 @@
     "eslint-plugin-react": "^7.34.0",
     "oxlint": "^0.2.13"
   },
+  "ignorePatterns": [
+    "temp.js",
+    "**/vendor/*.js",
+    "*.css"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

@@ -5,5 +5,5 @@
 ## Guick start
 
 ```
-pnpm create stillads-test-8
+pnpm create stillads
 ```
