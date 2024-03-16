@@ -1,7 +1,7 @@
 {
   "name": "create-stillads",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "bin": {
     "create-test5-test5": "bin/mvc.js"
